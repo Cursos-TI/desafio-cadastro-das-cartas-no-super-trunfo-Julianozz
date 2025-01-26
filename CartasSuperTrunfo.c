@@ -19,40 +19,53 @@ int main() {
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
     
     // abaixo declaração de variaveis
-    int cidade; 
-    int nome; 
-    float populacao;
+    char estado; 
+    char codigo; 
+    char nome;
+    unsigned long int populacao;
     float area;
-    int PIB;
+    float PIB;
     int pontos;
-    
-    // tema do meu jogo
-    printf("Desafio Super Triunfo Paises:\n");
-     
-    printf ("Insira o código da cidade:\n",cidade);//aqui imprime ao usuario uma msg de inserir o codigo
-    scanf ("%d", &cidade);// entrada do codigo feita pelo usuario
-    fflush(stdin);// limpar o baffer do teclado
-    printf ("Insira o Nome:\n",nome);// imprime a msg
-    scanf ("%d", &nome);// entrada 
-    fflush(stdin);// lipmpa o baffer 
-    printf ("Insira a populacao:\n",populacao);// imprime a msg
-    scanf ("%f", &populacao);// entrada 
-    fflush(stdin);// lipma
-    printf ("Insira a area:\n",area);// imprime
-    scanf ("%f", &area);// entrada
-    fflush(stdin); // limpa
-    printf ("Insira o PIB:\n",PIB);// imprime 
-    scanf ("%d", &PIB);// entrada 
-    fflush(stdin);// limpa
-    printf ("Insira o ponto turistico:\n",pontos);// imprima
-    scanf ("%d", &pontos); //entrada
-    // esta parte do codigo imprime tudo que o usuario digitou
-    printf("codigo da cidade:%d\n",cidade);
-    printf("Nome:%d\n",nome);
-    printf("Populacao:%.2f\n", populacao);
-    printf("area:%.2f\n", area);
-    printf("PIB:%d\n",PIB);
-    printf("ponto turistico:%d\n",pontos);
+    float densidadepolulacional;
+    float PIBPERCAPITA;
+    float superpoder;
+
+    // esta parte do codigo é onde o usuario vai entrar com os valores 
+    printf("Desafio Super Trunfo  Países\n");// Tema do jogo
+    printf("Estado\n");
+    scanf("%c", &estado);
+    fflush(stdin);
+    printf("Codigo da Carta\n");
+    scanf("%c", &codigo);
+    fflush(stdin);
+    printf("Nome Da Cidade\n");
+    scanf("%c", &nome);
+    fflush(stdin);
+    printf("Populacao\n");
+    scanf("%d", &populacao);
+    fflush(stdin);
+    printf("Area em Km2\n");
+    scanf("%f", &area);
+    fflush(stdin);
+    printf("PIB\n");
+    scanf("%f", &PIB);
+    fflush(stdin);
+    printf("Numeros de Pontos Turisticos\n");
+    scanf("%d", &pontos);
+    fflush(stdin);
+    printf("Densidade Populacional\n");
+    scanf("%f", &densidadepolulacional);
+    fflush(stdin);
+    printf("PIB PER CAPITA\n");
+    scanf("%f", &PIBPERCAPITA);
+    fflush(stdin);
+    printf("Super Poder\n");
+    scanf("%f", &superpoder);
+
+    //ainda estou arrumando o codigo
+
+
+
 
     return 0;
 }
